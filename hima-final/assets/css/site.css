@@ -8,7 +8,7 @@
 
 /* ========== DESKTOP DROPDOWN FIX - CENTER ME ========== */
 
-@media (min-width: 892px) {
+@media (min-width: 992px) {
   .navbar .dropdown-menu {
     width: 580px !important;  /* PEHLE 720/900 THA, AB 580 KAR DO */
     max-width: 70vw !important; /* PEHLE 85/90 THA, AB 70 */
@@ -18,7 +18,7 @@
   }
   
   .navbar .dropdown-menu .row {
-    grid-template-columns: repeat(3, 1fr) !important; /* 3 HI RAHEGA */
+    grid-template-columns: repeat(2, 1fr) !important; /* 3 HI RAHEGA */
     gap: 4px !important; /* GAP BHI KAM KAR DIA */
     margin: 0 !important;
   }
