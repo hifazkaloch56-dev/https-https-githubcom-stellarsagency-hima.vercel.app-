@@ -1,16 +1,16 @@
 :root{
-  --navy:#3B0B17;
-  --blue:#6B1E2E;
-  --cyan:#8B3045;
-  --teal:#7A2638;
+  --navy:#17070B;
+  --blue:#641522;
+  --cyan:#8E2638;
+  --teal:#7A1D30;
   --gold:#C79A43;
-  --ink:#321C24;
-  --muted:#6F6267;
+  --ink:#2B171C;
+  --muted:#706268;
   --bg:#FAF7F8;
   --white:#fff;
   --line:#E8DDE1;
-  --shadow:0 22px 60px rgba(59,11,23,.11);
-  --radius:22px
+  --shadow:0 22px 60px rgba(20,3,8,.18);
+  --radius:22px;
 }
 
 *{box-sizing:border-box}
@@ -166,28 +166,53 @@ color:var(--navy)
 }
 
 .hero{
-position:relative;
-overflow:hidden;
-background:linear-gradient(120deg,#062b47 0%,#0b5078 52%,#0c88a4 100%);
-color:#fff;
-padding:100px 0 90px
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(170,45,68,.38),transparent 30%),
+    radial-gradient(circle at 15% 85%,rgba(110,15,32,.32),transparent 35%),
+    linear-gradient(125deg,#080305 0%,#1B060C 24%,#45101C 50%,#751D31 72%,#26070E 100%);
+  color:#fff;
+  padding:100px 0 90px
 }
 
 .hero:after{
-content:"";
-position:absolute;
-inset:auto -10% -35% 30%;
-height:500px;
-background:radial-gradient(circle,rgba(255,255,255,.13),transparent 65%)
+  content:"";
+  position:absolute;
+  inset:auto -10% -35% 30%;
+  height:500px;
+  background:
+    radial-gradient(circle at 50% 40%,rgba(255,255,255,.12),transparent 42%),
+    radial-gradient(circle,rgba(154,31,52,.22),transparent 68%);
+  pointer-events:none
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  top:-20%;
+  left:35%;
+  width:55%;
+  height:140%;
+  background:linear-gradient(
+    115deg,
+    transparent 0%,
+    transparent 42%,
+    rgba(255,255,255,.055) 50%,
+    transparent 58%,
+    transparent 100%
+  );
+  transform:rotate(8deg);
+  pointer-events:none
 }
 
 .hero-grid{
-display:grid;
-grid-template-columns:1.02fr .98fr;
-gap:60px;
-align-items:center;
-position:relative;
-z-index:1
+  display:grid;
+  grid-template-columns:1.02fr .98fr;
+  gap:60px;
+  align-items:center;
+  position:relative;
+  z-index:1
 }
 
 .eyebrow{
