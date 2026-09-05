@@ -8,7 +8,7 @@
 
 /* ========== DESKTOP DROPDOWN FIX - CENTER ME ========== */
 
-@media (min-width: 992px) {
+@media (min-width: 892px) {
   .navbar .dropdown-menu {
     width: 580px !important;  /* PEHLE 720/900 THA, AB 580 KAR DO */
     max-width: 70vw !important; /* PEHLE 85/90 THA, AB 70 */
