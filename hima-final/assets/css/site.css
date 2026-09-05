@@ -138,32 +138,35 @@ img, video, iframe, .row, .container, .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* ===== FOOTER FORCE 1 LINE FINAL ===== */
-.footer-bottom {
+/* ===== FOOTER 1 LINE FORCE ===== */
+.footer-bottom .container {
   text-align: center !important;
-  padding: 20px 0 !important;
-  width: 100% !important;
 }
 
 .footer-legal-links {
-  display: inline-flex !important;
+  display: flex !important;
+  flex-direction: row !important;
   justify-content: center !important;
   align-items: center !important;
   gap: 15px !important;
-  margin-top: 10px !important;
-  flex-wrap: nowrap !important; /* wrap hata dia */
-  width: 100% !important;
+  flex-wrap: nowrap !important;
+  margin-top: 8px !important;
 }
 
 .footer-legal-links a {
-  color: #a0aec0 !important;
+  display: inline-block !important;
+  color: #cbd5e0 !important;
   text-decoration: none !important;
   font-size: 14px !important;
-  white-space: nowrap !important; /* toote ga nahi */
+}
+
+.footer-legal-links a:hover {
+  color: #B22234 !important; /* Maroon hover */
 }
 
 .footer-legal-links .separator {
   color: #4a5568 !important;
+  display: inline-block !important;
 }
 /* ===== LOGO SIZE DESKTOP FIX ===== */
 @media (min-width: 992px) {
@@ -177,5 +180,18 @@ img, video, iframe, .row, .container, .container-fluid {
   .logo-badge img {
     max-height: 40px !important;  /* 45 se 40 kar dia */
     width: auto !important;
+  }
+}
+  /* ===== LOGO DESKTOP FORCE CHHOTA ===== */
+@media (min-width: 992px) {
+  .navbar-brand img {
+    max-height: 42px !important; /* yahan se size control hoga */
+    width: auto !important;
+    height: auto !important;
+  }
+  
+  .logo-badge {
+    padding: 6px 12px !important;
+    font-size: 11px !important;
   }
 }
