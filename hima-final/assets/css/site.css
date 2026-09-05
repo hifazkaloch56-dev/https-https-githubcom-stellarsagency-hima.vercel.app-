@@ -195,3 +195,19 @@ img, video, iframe, .row, .container, .container-fluid {
     font-size: 11px !important;
   }
 }
+/* ===== FORCE FOOTER LINKS ONE LINE ===== */
+.footer-legal-links {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  white-space: nowrap !important;
+  width: 100% !important;
+}
+
+.footer-legal-links a,
+.footer-legal-links .separator {
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
