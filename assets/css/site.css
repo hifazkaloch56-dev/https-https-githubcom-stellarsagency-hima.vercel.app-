@@ -1,4 +1,17 @@
-:root{--navy:#082d49;--blue:#0d6ea8;--cyan:#18a7c8;--teal:#0e9e9a;--gold:#c79a43;--ink:#183447;--muted:#607384;--bg:#f5f9fc;--white:#fff;--line:#dce8ef;--shadow:0 22px 60px rgba(8,45,73,.11);--radius:22px}
+:root{
+  --navy:#3B0B17;
+  --blue:#6B1E2E;
+  --cyan:#8B3045;
+  --teal:#7A2638;
+  --gold:#C79A43;
+  --ink:#321C24;
+  --muted:#6F6267;
+  --bg:#FAF7F8;
+  --white:#fff;
+  --line:#E8DDE1;
+  --shadow:0 22px 60px rgba(59,11,23,.11);
+  --radius:22px
+}
 
 *{box-sizing:border-box}
 
@@ -56,7 +69,15 @@ gap:34px
 
 /* LOGO SIZE */
 .logo{
-width:110px
+  width:130px;
+  display:flex;
+  align-items:center;
+}
+
+.logo img{
+  width:100px;
+  height:auto;
+  max-width:110px;
 }
 
 .navlinks{
@@ -801,8 +822,18 @@ height:72px
 }
 
 /* MOBILE LOGO SIZE */
-.logo{
-width:100px
+@media(max-width:620px){
+
+  .logo{
+    width:100px;
+  }
+
+  .logo img{
+    width:80px;
+    max-width:90px;
+    height:auto;
+  }
+
 }
 
 .hero{
