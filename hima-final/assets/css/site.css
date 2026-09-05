@@ -138,43 +138,28 @@ img, video, iframe, .row, .container, .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* ===== LOGO SIZE CHOTA KARO ===== */
-.navbar-brand img,
-.navbar .logo img {
-  max-height: 30px !important; /* PEHLE 60-70 HOGA, AB 45 KAR DO */
-  width: auto !important;
-}
-
-/* Mobile ke liye */
-@media (max-width: 991px) {
-  .navbar-brand img,
-  .navbar .logo img {
-    max-height: 28px !important;
-  }
-}
-/* ===== FOOTER FIX ===== */
+/* ===== FOOTER FORCE 1 LINE FINAL ===== */
 .footer-bottom {
   text-align: center !important;
   padding: 20px 0 !important;
+  width: 100% !important;
 }
 
 .footer-legal-links {
-  display: flex !important;
+  display: inline-flex !important;
   justify-content: center !important;
   align-items: center !important;
   gap: 15px !important;
   margin-top: 10px !important;
-  flex-wrap: wrap !important;
+  flex-wrap: nowrap !important; /* wrap hata dia */
+  width: 100% !important;
 }
 
 .footer-legal-links a {
   color: #a0aec0 !important;
   text-decoration: none !important;
   font-size: 14px !important;
-}
-
-.footer-legal-links a:hover {
-  color: #B22234 !important; /* Wahi maroon */
+  white-space: nowrap !important; /* toote ga nahi */
 }
 
 .footer-legal-links .separator {
