@@ -61,3 +61,41 @@
   }
   
   /* Body scroll lock jab menu open ho */
+
+  /* ========== FULL WIDTH CONTAINER FIX ========== */
+.container, .container-fluid {
+  max-width: 1400px !important; /* Pehle 1140px hoga */
+  width: 95% !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Hero/Dashboard section ko full width karo */
+.hero-section, 
+.banner, 
+section:first-of-type {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+/* Blue background wale box ko bara karo */
+.hero-section .blue-bg, 
+.banner .bg-blue {
+  width: 100% !important;
+  border-radius: 0 !important; /* Corner se corner tak */
+}
+
+/* Andar wala white dashboard card center me */
+.hero-section .dashboard-card, 
+.banner .card {
+  max-width: 1200px !important;
+  margin: 40px auto !important;
+}
+
+/* Body me horizontal scroll hatane ke liye */
+body, html {
+  overflow-x: hidden !important;
+  width: 100%;
+}
