@@ -8,28 +8,39 @@
 
 /* ========== DESKTOP DROPDOWN FIX - CENTER ME ========== */
 
+/* ========== DESKTOP DROPDOWN FIX V2 ========== */
 @media (min-width: 992px) {
+  .navbar .nav-item.dropdown {
+    position: relative !important; /* static hata ke relative */
+  }
+  
   .navbar .dropdown-menu {
     position: absolute !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 720px !important; /* PEHLE 900px THA, AB 720px KAR DO */
-    max-width: 85vw !important; /* PEHLE 90vw THA, AB 85vw */
-    padding: 15px !important; /* PEHLE 20px THA, AB 15px */
+    left: 0 !important; /* CENTER HATA KE LEFT ALIGN */
+    transform: none !important; /* TRANSFORM HATA DO */
+    width: 650px !important; /* OR CHOTA KAR DIA */
+    max-width: 80vw !important;
+    padding: 12px !important;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    border: 1px solid #e0e0e0;
+    margin-top: 8px;
   }
   
   .navbar .dropdown-menu .row {
     display: grid !important;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 8px !important; /* PEHLE 15px THA, AB 8px */
+    grid-template-columns: repeat(3, 1fr); /* 3 COLUMN RAHEGA */
+    gap: 6px !important;
     margin: 0 !important;
   }
   
   .navbar .dropdown-menu a {
-    font-size: 13px !important; /* PEHLE 14px THA, AB 13px */
-    padding: 6px 8px !important; /* PEHLE 8px 10px THA, AB 6px 8px */
+    font-size: 12px !important; /* OR CHOTA FONT */
+    padding: 5px 6px !important;
+    white-space: nowrap !important; /* TEXT 1 LINE ME */
   }
 }
+
 /* ========== MOBILE MENU FIX ========== */
 @media (max-width: 991px) {
   /* Menu ko full screen banao aur scrollable */
