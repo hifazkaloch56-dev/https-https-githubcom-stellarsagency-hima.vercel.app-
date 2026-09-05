@@ -198,3 +198,31 @@ html body footer .footer-grid img[src*="logo-trim-light"] {
   html body header.navbar a.logo img { width: 75px !important; }
   html body footer .footer-grid img[src*="logo-trim-light"] { width: 70px !important; }
 }
+/* ===== HIMA TECH THEME COLORS ===== */
+:root {
+  --hima-maroon: #A1122F;
+  --hima-black: #0A0A0A;
+  --hima-white: #FFFFFF;
+}
+
+/* Button ka color */
+.btn-primary, .btn-book {
+  background: var(--hima-maroon) !important;
+  border-color: var(--hima-maroon) !important;
+  color: var(--hima-white) !important;
+}
+
+.btn-primary:hover {
+  background: #8A1428 !important; /* thora dark hover */
+}
+
+/* Header bg */
+.navbar, header {
+  background: var(--hima-black) !important;
+}
+
+/* Cards wala bg */
+.stat-card {
+  background: rgba(161, 18, 47, 0.15) !important; /* maroon halka transparent */
+  border: 1px solid rgba(161, 18, 47, 0.3) !important;
+}
