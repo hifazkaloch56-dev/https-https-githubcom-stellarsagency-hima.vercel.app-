@@ -168,31 +168,34 @@ img, video, iframe, .row, .container, .container-fluid {
   color: #4a5568 !important;
   display: inline-block !important;
 }
-/* ===== LOGO SIZE DESKTOP FIX ===== */
-@media (min-width: 992px) {
-  .logo-badge {
-    padding: 8px 14px !important;  /* padding kam kar dia */
-    font-size: 11px !important;    /* font chhota kar dia */
-    border-radius: 999px !important;
-  }
-  
-  /* Agar .logo-badge ke andar img hai to wo bhi chhoti karo */
-  .logo-badge img {
-    max-height: 40px !important;  /* 45 se 40 kar dia */
-    width: auto !important;
-  }
+/* ===== HIMA TECH RCM LOGO SIZES ===== */
+
+/* Header Logo - Desktop */
+.navbar .logo img {
+  width: 110px !important;
+  max-width: 110px !important;
+  height: auto !important;
 }
-  /* ===== LOGO DESKTOP FORCE CHHOTA ===== */
-@media (min-width: 992px) {
-  .navbar-brand img {
-    max-height: 42px !important; /* yahan se size control hoga */
-    width: auto !important;
+
+/* Footer Logo - Desktop */
+.footer-grid img[src*="logo-trim-light"] {
+  width: 100px !important;
+  max-width: 100px !important;
+  height: auto !important;
+}
+
+/* Header & Footer Logo - Mobile */
+@media (max-width: 991px) {
+  .navbar .logo img {
+    width: 100px !important;
+    max-width: 100px !important;
     height: auto !important;
   }
-  
-  .logo-badge {
-    padding: 6px 12px !important;
-    font-size: 11px !important;
+
+  .footer-grid img[src*="logo-trim-light"] {
+    width: 100px !important;
+    max-width: 100px !important;
+    height: auto !important;
   }
 }
 /* ===== FORCE FOOTER LINKS ONE LINE ===== */
