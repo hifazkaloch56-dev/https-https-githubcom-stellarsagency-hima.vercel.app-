@@ -8,25 +8,54 @@
 
 /* ========== DESKTOP DROPDOWN FIX - CENTER ME ========== */
 
+/* ========== HIMA TECH DROPDOWN FINAL FIX ========== */
 @media (min-width: 992px) {
-  .navbar .dropdown-menu {
-    width: 580px !important;  /* PEHLE 720/900 THA, AB 580 KAR DO */
-    max-width: 70vw !important; /* PEHLE 85/90 THA, AB 70 */
-    padding: 10px 12px !important; /* PEHLE 15/20 THA, AB 10 12 */
-    left: 0 !important; /* YE ADD KARNA MAT BHOOLNA */
-    transform: none !important;
+  
+  /* 1. Parent ko relative */
+  .navbar .nav-item.dropdown {
+    position: relative !important;
   }
   
-  .navbar .dropdown-menu .row {
-    grid-template-columns: repeat(2, 1fr) !important; /* 3 HI RAHEGA */
-    gap: 4px !important; /* GAP BHI KAM KAR DIA */
+  /* 2. Menu ko center me + chota */
+  .navbar .dropdown-menu.show {
+    position: absolute !important;
+    top: 100% !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 600px !important;
+    max-width: 70vw !important;
+    padding: 12px !important;
+    margin-top: 8px !important;
+    border-radius: 10px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
+    border: 1px solid #e5e5e5 !important;
+    background: #fff !important;
+    z-index: 9999 !important;
+  }
+  
+  /* 3. Andar 3 column grid */
+  .navbar .dropdown-menu.show .row {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 5px !important;
     margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
   }
   
-  .navbar .dropdown-menu a {
+  /* 4. Har link chota */
+  .navbar .dropdown-menu.show a.dropdown-item {
     font-size: 12px !important;
-    padding: 5px 6px !important;
-    white-space: nowrap !important; /* TEXT 1 LINE ME */
+    padding: 6px 8px !important;
+    white-space: nowrap !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    border-radius: 6px !important;
+  }
+  
+  .navbar .dropdown-menu.show a.dropdown-item:hover {
+    background: #f3f8fb !important;
   }
 }
 
