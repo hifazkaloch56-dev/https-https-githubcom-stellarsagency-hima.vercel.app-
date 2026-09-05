@@ -198,3 +198,10 @@ img, video, iframe, .row, .container, .container-fluid {
     height: auto !important;
   }
 }
+  /* ===== DESKTOP SERVICES DROPDOWN FIX ===== */
+@media (min-width: 992px) {
+  .dropdown-menu {
+    left: 0 !important;
+    right: auto !important;
+  }
+}
