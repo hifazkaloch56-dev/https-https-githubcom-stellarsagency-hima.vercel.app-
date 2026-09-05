@@ -198,15 +198,13 @@ html body footer .footer-grid img[src*="logo-trim-light"] {
   html body header.navbar a.logo img { width: 75px !important; }
   html body footer .footer-grid img[src*="logo-trim-light"] { width: 70px !important; }
 }
-/* FORCE THEME COLOR */
-html body .btn-primary, 
-html body .btn-book,
-html body a[href*="book"] {
-  background: #A1122F !important;
-  border: 1px solid #A1122F !important;
-  color: #FFFFFF !important;
+/* NUCLEAR OPTION */
+body.btn-primary[href] {
+  background: #A1122F!important;
+  border-color: #A1122F!important;
+  color: #fff!important;
 }
 
-html body header.navbar {
-  background: #0A0A0A !important;
+body header.navbar {
+  background: #0A0A0A!important;
 }
