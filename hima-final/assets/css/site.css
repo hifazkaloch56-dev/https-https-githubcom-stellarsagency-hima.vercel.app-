@@ -8,34 +8,23 @@
 
 /* ========== DESKTOP DROPDOWN FIX - CENTER ME ========== */
 
-/* ========== DESKTOP DROPDOWN FIX V2 ========== */
 @media (min-width: 992px) {
-  .navbar .nav-item.dropdown {
-    position: relative !important; /* static hata ke relative */
-  }
-  
   .navbar .dropdown-menu {
-    position: absolute !important;
-    left: 0 !important; /* CENTER HATA KE LEFT ALIGN */
-    transform: none !important; /* TRANSFORM HATA DO */
-    width: 650px !important; /* OR CHOTA KAR DIA */
-    max-width: 80vw !important;
-    padding: 12px !important;
-    border-radius: 10px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-    border: 1px solid #e0e0e0;
-    margin-top: 8px;
+    width: 580px !important;  /* PEHLE 720/900 THA, AB 580 KAR DO */
+    max-width: 70vw !important; /* PEHLE 85/90 THA, AB 70 */
+    padding: 10px 12px !important; /* PEHLE 15/20 THA, AB 10 12 */
+    left: 0 !important; /* YE ADD KARNA MAT BHOOLNA */
+    transform: none !important;
   }
   
   .navbar .dropdown-menu .row {
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr); /* 3 COLUMN RAHEGA */
-    gap: 6px !important;
+    grid-template-columns: repeat(3, 1fr) !important; /* 3 HI RAHEGA */
+    gap: 4px !important; /* GAP BHI KAM KAR DIA */
     margin: 0 !important;
   }
   
   .navbar .dropdown-menu a {
-    font-size: 12px !important; /* OR CHOTA FONT */
+    font-size: 12px !important;
     padding: 5px 6px !important;
     white-space: nowrap !important; /* TEXT 1 LINE ME */
   }
