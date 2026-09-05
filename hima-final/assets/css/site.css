@@ -152,3 +152,31 @@ img, video, iframe, .row, .container, .container-fluid {
     max-height: 28px !important;
   }
 }
+/* ===== FOOTER FIX ===== */
+.footer-bottom {
+  text-align: center !important;
+  padding: 20px 0 !important;
+}
+
+.footer-legal-links {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 15px !important;
+  margin-top: 10px !important;
+  flex-wrap: wrap !important;
+}
+
+.footer-legal-links a {
+  color: #a0aec0 !important;
+  text-decoration: none !important;
+  font-size: 14px !important;
+}
+
+.footer-legal-links a:hover {
+  color: #B22234 !important; /* Wahi maroon */
+}
+
+.footer-legal-links .separator {
+  color: #4a5568 !important;
+}
