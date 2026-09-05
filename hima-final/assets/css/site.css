@@ -7,49 +7,29 @@
 @media(max-width:620px){.container{width:min(100% - 28px,1180px)}.topbar{display:none}.nav{height:72px}.logo{width:150px}.hero{padding:70px 0}.hero h1{font-size:40px}.cards,.pill-grid,.specialties{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr 1fr}.trust-item{border:0!important;padding:10px 0}.section{padding:65px 0}.process{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{display:block}.cta-grid{display:block}.cta .btn{margin-top:15px}}
 
 /* ========== DESKTOP DROPDOWN FIX - CENTER ME ========== */
+
 @media (min-width: 992px) {
-  /* Parent ko relative rakho */
-  .navbar .nav-item.dropdown {
-    position: static !important;
-  }
-  
-  /* Dropdown ko center me */
   .navbar .dropdown-menu {
     position: absolute !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    width: 900px !important;
-    max-width: 90vw !important;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    border: 1px solid var(--line);
-    margin-top: 12px;
+    width: 720px !important; /* PEHLE 900px THA, AB 720px KAR DO */
+    max-width: 85vw !important; /* PEHLE 90vw THA, AB 85vw */
+    padding: 15px !important; /* PEHLE 20px THA, AB 15px */
   }
   
-  /* Sirf row ko grid banao, menu ko nahi */
   .navbar .dropdown-menu .row {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 8px !important; /* PEHLE 15px THA, AB 8px */
     margin: 0 !important;
-    width: 100%;
   }
   
   .navbar .dropdown-menu a {
-    white-space: normal !important;
-    font-size: 14px;
-    padding: 8px 10px !important;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .navbar .dropdown-menu a:hover {
-    background: #f3f8fb;
-    border-radius: 8px;
+    font-size: 13px !important; /* PEHLE 14px THA, AB 13px */
+    padding: 6px 8px !important; /* PEHLE 8px 10px THA, AB 6px 8px */
   }
 }
-
 /* ========== MOBILE MENU FIX ========== */
 @media (max-width: 991px) {
   /* Menu ko full screen banao aur scrollable */
