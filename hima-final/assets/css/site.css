@@ -6,56 +6,42 @@
 @media(max-width:980px){.navlinks{display:none}.menu{display:block;margin-left:auto}.hero-grid,.split,.service-intro,.form-wrap{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr)}.trust-item:nth-child(2){border:0}.footer-grid{grid-template-columns:1fr 1fr}.mega{position:static;width:auto;grid-template-columns:1fr;box-shadow:none;border:0;display:none}.dropdown.open .mega{display:grid}.mobile-menu{position:absolute;left:20px;right:20px;top:72px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}.mobile-menu.show{display:block}.mobile-menu>a,.mobile-menu button{display:block;width:100%;padding:12px;border:0;background:none;text-align:left;font:inherit;font-weight:700}}
 @media(max-width:620px){.container{width:min(100% - 28px,1180px)}.topbar{display:none}.nav{height:72px}.logo{width:150px}.hero{padding:70px 0}.hero h1{font-size:40px}.cards,.pill-grid,.specialties{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr 1fr}.trust-item{border:0!important;padding:10px 0}.section{padding:65px 0}.process{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-bottom{display:block}.cta-grid{display:block}.cta .btn{margin-top:15px}}
 
-/* ========== DESKTOP DROPDOWN FIX - CENTER ME ========== */
-
-/* ========== HIMA TECH DROPDOWN FINAL FIX ========== */
+/* ===== FORCE FIX FOR HIMA TECH DROPDOWN ===== */
 @media (min-width: 992px) {
-  
-  /* 1. Parent ko relative */
-  .navbar .nav-item.dropdown {
-    position: relative !important;
+  header .navbar .dropdown {
+    position: static !important;
   }
   
-  /* 2. Menu ko center me + chota */
-  .navbar .dropdown-menu.show {
+  header .navbar .dropdown-menu {
     position: absolute !important;
-    top: 100% !important;
     left: 50% !important;
+    right: auto !important;
     transform: translateX(-50%) !important;
-    width: 600px !important;
-    max-width: 70vw !important;
-    padding: 12px !important;
-    margin-top: 8px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15) !important;
-    border: 1px solid #e5e5e5 !important;
-    background: #fff !important;
-    z-index: 9999 !important;
+    width: 560px !important;
+    max-width: 68vw !important;
+    min-width: 560px !important;
+    padding: 10px !important;
+    margin: 8px auto 0 auto !important;
+    display: block !important;
   }
-  
-  /* 3. Andar 3 column grid */
-  .navbar .dropdown-menu.show .row {
+
+  header .navbar .dropdown-menu .container,
+  header .navbar .dropdown-menu .row {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 5px !important;
+    gap: 4px !important;
+    width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    width: 100% !important;
   }
-  
-  /* 4. Har link chota */
-  .navbar .dropdown-menu.show a.dropdown-item {
-    font-size: 12px !important;
-    padding: 6px 8px !important;
+
+  header .navbar .dropdown-menu a {
+    font-size: 11px !important;
+    padding: 5px 5px !important;
+    line-height: 1.3 !important;
     white-space: nowrap !important;
-    display: flex !important;
-    align-items: center !important;
-    gap: 6px !important;
-    border-radius: 6px !important;
-  }
-  
-  .navbar .dropdown-menu.show a.dropdown-item:hover {
-    background: #f3f8fb !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 }
 
