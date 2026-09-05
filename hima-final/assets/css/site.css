@@ -197,26 +197,3 @@ html body footer .footer-grid img[src*="logo-trim-light"] {
 @media (max-width: 991px) {
   html body header.navbar a.logo img { width: 75px !important; }
   html body footer .footer-grid img[src*="logo-trim-light"] { width: 70px !important; }
-}:root{
-  --navy:#A1122F;      /* Dark Red - Header, Footer */
-  --blue:#D32F2F;      /* Main Red - Buttons, Links */
-  --cyan:#EF5350;      /* Light Red - Hover */
-  --teal:#A1122F;      /* Extra Red */
-  --gold:#c79a43;      /* Ye rehne do accent ke liye */
-  --ink:#183447;       /* Text color */
-  --muted:#607384;     /* Sub text */
-  --bg:#FFF5F5;        /* Halka Pinkish Background */
-  --white:#fff;
-  --line:#FADADD;      /* Light Red Border */
-  --shadow:0 22px 60px rgba(161,18,47,.15);
-  --radius:22px
-}
-
-/* BUTTON KO FORCE KARO */
-.btn-primary {
-  background: var(--blue) !important;
-  color: var(--white) !important;
-}
-.service-hero {
-  background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%) !important;
-}
