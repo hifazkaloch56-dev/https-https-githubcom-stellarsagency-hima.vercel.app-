@@ -138,3 +138,17 @@ img, video, iframe, .row, .container, .container-fluid {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+/* ===== LOGO SIZE CHOTA KARO ===== */
+.navbar-brand img,
+.navbar .logo img {
+  max-height: 45px !important; /* PEHLE 60-70 HOGA, AB 45 KAR DO */
+  width: auto !important;
+}
+
+/* Mobile ke liye */
+@media (max-width: 991px) {
+  .navbar-brand img,
+  .navbar .logo img {
+    max-height: 38px !important;
+  }
+}
