@@ -8,6 +8,31 @@
 <link rel="icon" href="/assets/images/favicon.png">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="/assets/css/site.css?v=2">
+  <style>
+/* ===== FORCE LOGO SIZE ALL PAGES ===== */
+.navbar .logo img {
+  width: 90px !important;
+  max-width: 90px !important;
+  height: auto !important;
+}
+
+.footer-grid img[src*="logo-trim-light"] {
+  width: 90px !important;
+  max-width: 90px !important;
+  height: auto !important;
+}
+
+@media (max-width: 991px) {
+  .navbar .logo img {
+    width: 75px !important;
+    max-width: 75px !important;
+  }
+  .footer-grid img[src*="logo-trim-light"] {
+    width: 70px !important;
+    max-width: 70px !important;
+  }
+}
+</style>
 </head>
 
 <body>
