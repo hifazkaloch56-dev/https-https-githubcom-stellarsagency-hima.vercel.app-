@@ -169,41 +169,57 @@ color:var(--navy)
   position:relative;
   overflow:hidden;
   background:
-    radial-gradient(circle at 82% 18%,rgba(170,45,68,.38),transparent 30%),
-    radial-gradient(circle at 15% 85%,rgba(110,15,32,.32),transparent 35%),
-    linear-gradient(125deg,#080305 0%,#1B060C 24%,#45101C 50%,#751D31 72%,#26070E 100%);
+    radial-gradient(circle at 78% 22%,rgba(255,70,95,.55) 0%,rgba(150,20,45,.28) 25%,transparent 48%),
+    radial-gradient(circle at 18% 75%,rgba(190,35,65,.35) 0%,transparent 42%),
+    linear-gradient(
+      125deg,
+      #050204 0%,
+      #26050D 18%,
+      #650F22 40%,
+      #A51F3C 62%,
+      #7A1028 78%,
+      #160309 100%
+    );
   color:#fff;
-  padding:100px 0 90px
+  padding:100px 0 90px;
 }
 
 .hero:after{
   content:"";
   position:absolute;
-  inset:auto -10% -35% 30%;
-  height:500px;
+  width:700px;
+  height:700px;
+  right:-180px;
+  top:-300px;
   background:
-    radial-gradient(circle at 50% 40%,rgba(255,255,255,.12),transparent 42%),
-    radial-gradient(circle,rgba(154,31,52,.22),transparent 68%);
-  pointer-events:none
+    radial-gradient(
+      circle,
+      rgba(255,255,255,.28) 0%,
+      rgba(255,110,130,.16) 12%,
+      rgba(255,40,75,.08) 28%,
+      transparent 65%
+    );
+  pointer-events:none;
 }
 
 .hero:before{
   content:"";
   position:absolute;
-  top:-20%;
-  left:35%;
-  width:55%;
-  height:140%;
-  background:linear-gradient(
-    115deg,
-    transparent 0%,
-    transparent 42%,
-    rgba(255,255,255,.055) 50%,
-    transparent 58%,
-    transparent 100%
-  );
-  transform:rotate(8deg);
-  pointer-events:none
+  left:-15%;
+  top:-60%;
+  width:130%;
+  height:220%;
+  background:
+    linear-gradient(
+      115deg,
+      transparent 38%,
+      rgba(255,255,255,.04) 45%,
+      rgba(255,255,255,.16) 49%,
+      rgba(255,255,255,.05) 53%,
+      transparent 60%
+    );
+  transform:rotate(-8deg);
+  pointer-events:none;
 }
 
 .hero-grid{
@@ -212,9 +228,8 @@ color:var(--navy)
   gap:60px;
   align-items:center;
   position:relative;
-  z-index:1
+  z-index:2;
 }
-
 .eyebrow{
 display:inline-flex;
 gap:8px;
