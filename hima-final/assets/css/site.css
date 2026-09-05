@@ -182,26 +182,19 @@ img, video, iframe, .row, .container, .container-fluid {
     height: auto !important;
   }
 }
-  /* ===== FORCE LOGO SIZE ON ALL PAGES ===== */
-html body .navbar .logo img {
+ html body header.navbar a.logo img {
   width: 90px !important;
   max-width: 90px !important;
   height: auto !important;
 }
 
-html body .footer-grid img[src*="logo-trim-light"] {
+html body footer .footer-grid img[src*="logo-trim-light"] {
   width: 90px !important;
   max-width: 90px !important;
   height: auto !important;
 }
 
 @media (max-width: 991px) {
-  html body .navbar .logo img {
-    width: 75px !important;
-    max-width: 75px !important;
-  }
-  html body .footer-grid img[src*="logo-trim-light"] {
-    width: 70px !important;
-    max-width: 70px !important;
-  }
+  html body header.navbar a.logo img { width: 75px !important; }
+  html body footer .footer-grid img[src*="logo-trim-light"] { width: 70px !important; }
 }
