@@ -165,3 +165,17 @@ img, video, iframe, .row, .container, .container-fluid {
 .footer-legal-links .separator {
   color: #4a5568 !important;
 }
+/* ===== LOGO SIZE DESKTOP FIX ===== */
+@media (min-width: 992px) {
+  .logo-badge {
+    padding: 8px 14px !important;  /* padding kam kar dia */
+    font-size: 11px !important;    /* font chhota kar dia */
+    border-radius: 999px !important;
+  }
+  
+  /* Agar .logo-badge ke andar img hai to wo bhi chhoti karo */
+  .logo-badge img {
+    max-height: 40px !important;  /* 45 se 40 kar dia */
+    width: auto !important;
+  }
+}
