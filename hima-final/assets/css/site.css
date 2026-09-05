@@ -141,7 +141,7 @@ img, video, iframe, .row, .container, .container-fluid {
 /* ===== LOGO SIZE CHOTA KARO ===== */
 .navbar-brand img,
 .navbar .logo img {
-  max-height: 45px !important; /* PEHLE 60-70 HOGA, AB 45 KAR DO */
+  max-height: 30px !important; /* PEHLE 60-70 HOGA, AB 45 KAR DO */
   width: auto !important;
 }
 
@@ -149,6 +149,6 @@ img, video, iframe, .row, .container, .container-fluid {
 @media (max-width: 991px) {
   .navbar-brand img,
   .navbar .logo img {
-    max-height: 38px !important;
+    max-height: 28px !important;
   }
 }
